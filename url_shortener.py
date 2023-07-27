@@ -14,4 +14,4 @@ if s_btn:
     shorted_url = shortener.tinyurl.short(url)
     st.markdown("<h4 style='text-align:center;'>SHORTED URL</h4>", unsafe_allow_html=True)
     st.markdown(f"<h6 style='text-align:center;'>{shorted_url}</h6>", unsafe_allow_html=True)
-    st.button('copy', on_click=copying)
+    
