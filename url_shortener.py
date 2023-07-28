@@ -16,5 +16,5 @@ if s_btn:
      st.markdown("<h4 style='text-align:center;'>SHORTED URL</h4>", unsafe_allow_html=True)
      st.markdown(f"<h6 style='text-align:center;'>{shorted_url}</h6>", unsafe_allow_html=True)
    except:
-       st.markdown("<h4 style='text-align:center;'>SHORTED URL</h4>", unsafe_allow_html=True)
+       st.markdown("<h4 style='text-align:center;'>This isn't a link or there's a network error</h4>", unsafe_allow_html=True)
 
