@@ -11,7 +11,10 @@ form = st.form('name')
 url = form.text_input("URL HERE")
 s_btn=form.form_submit_button("SHORT")
 if s_btn:
-    shorted_url = shortener.tinyurl.short(url)
-    st.markdown("<h4 style='text-align:center;'>SHORTED URL</h4>", unsafe_allow_html=True)
-    st.markdown(f"<h6 style='text-align:center;'>{shorted_url}</h6>", unsafe_allow_html=True)
-    
+   try:
+     shorted_url = shortener.tinyurl.short(url)
+     st.markdown("<h4 style='text-align:center;'>SHORTED URL</h4>", unsafe_allow_html=True)
+     st.markdown(f"<h6 style='text-align:center;'>{shorted_url}</h6>", unsafe_allow_html=True)
+   except:
+       st.markdown("<h4 style='text-align:center;'>SHORTED URL</h4>", unsafe_allow_html=True)
+
